@@ -362,6 +362,23 @@ article .icon {
   position: relative;
 }
 
+/* Layout: limit to 3 cards per row, wrap extras to next row */
+#projects .about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#projects .details-container {
+  flex: 0 1 calc(33.333% - 2rem);
+  box-sizing: border-box;
+  max-width: 33.333%;
+  min-width: 220px;
+}
+
 /* .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
